@@ -1,4 +1,4 @@
-.container{
+/* .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,4 +17,125 @@
     display: flex;
     gap: 10px;
     flex-direction: column;
+} */
+
+/* ========== RESET ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+/* ========== PAGE LAYOUT ========== */
+body {
+    min-height: 100vh;
+    background: #0f172a; /* dark professional background */
+    color: #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* ========== CANVAS SECTION ========== */
+.container {
+    background: #020617;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+canvas {
+    border-radius: 10px;
+    background: #ffffff;
+    cursor: crosshair;
+}
+
+/* Room ID */
+#roomIdBtn {
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* ========== BUTTON CONTROLS ========== */
+.container-btn {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Shared button style */
+button {
+    padding: 0.55rem 1.1rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Individual button colors */
+#clearBtn {
+    background: #ef4444;
+    color: white;
+}
+#clearBtn:hover { background: #dc2626; }
+
+#saveBtn {
+    background: #22c55e;
+    color: white;
+}
+#saveBtn:hover { background: #16a34a; }
+
+#homeBtn {
+    background: #3b82f6;
+    color: white;
+}
+#homeBtn:hover { background: #2563eb; }
+
+#copyLink {
+    background: #a855f7;
+    color: white;
+}
+#copyLink:hover { background: #9333ea; }
+
+/* ========== WEBRTC SECTION ========== */
+.webrtc_container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background: #020617;
+    padding: 0.75rem;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 270px;
+}
+
+/* Videos */
+.webrtc_container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background: black;
+}
+
+/* WebRTC buttons */
+.webrtc_container button {
+    background: #334155;
+    color: #e5e7eb;
+}
+
+.webrtc_container button:hover {
+    background: #475569;
 }
